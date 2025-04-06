@@ -3,6 +3,9 @@ from pydantic import BaseModel
 import subprocess
 import os
 import asyncio
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI()
 
