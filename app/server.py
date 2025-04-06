@@ -9,7 +9,7 @@ load_dotenv()
 
 app = FastAPI()
 
-SCRIPTS_DIRECTORY = os.getenv("SCRIPTS_DIRECTORY")
+SCRIPTS_DIRECTORY = os.getenv("SCRIPTS_DIRECTORY", "/app/scripts")
 
 class ScriptRequest(BaseModel):
     script_name: str
